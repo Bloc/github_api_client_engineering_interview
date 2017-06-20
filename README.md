@@ -9,6 +9,10 @@ Once you have a token, you can test out the API endpoint using cURL:
 
 Going forward, using the Auth token in the HTTP header to authenticate future requests.
 
+If you integrate this into an app without using cURL, you'll also need a [`User-Agent` header with your username](https://developer.github.com/v3/#user-agent-required) on GitHub, e.g.
+
+`User-Agent: <USERNAME>`
+
 ### Endpoints
 
 We're going to work around the endpoint that grabs your repositories.
