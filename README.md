@@ -1,0 +1,18 @@
+## GitHub API Client
+
+### Auth
+
+You can create an Auth token on the [personal API tokens page](https://github.com/blog/1509-personal-api-tokens) or using [any other form of Auth provided by GitHub](https://developer.github.com/v3/#authentication).
+
+Once you have a token, you can test out the API endpoint using cURL: 
+`curl -H "Authorization: token <OAUTH-TOKEN>" https://api.github.com`
+
+Going forward, using the Auth token in the HTTP header to authenticate future requests.
+
+### Endpoints
+
+We're going to work around the endpoint that grabs your repositories.
+
+`GET /repos/:owner/:repo`
+
+[Here are the docs for the endpoint](https://developer.github.com/v3/repos/#get)
